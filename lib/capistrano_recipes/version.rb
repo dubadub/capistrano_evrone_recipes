@@ -1,4 +1,4 @@
-module CapistranoEvroneRecipes
+module CapistranoRecipes
   class VERSION
 
     MAJOR = 0

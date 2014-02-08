@@ -8,7 +8,7 @@ namespace :crontab do
   desc "Generate crontab from config/whenever.rb"
   task :generate, :roles => :crontab, :on_no_matching_servers => :continue, :except => { :no_release => true }  do
     if find_servers_for_task(current_task).any?
-      CapistranoEvroneRecipes::Util.ensure_changed_remote_files(self, "config/schedule.rb") do
+      CapistranoRecipes::Util.ensure_changed_remote_files(self, "config/schedule.rb") do
         find_and_execute_task("whenever:update_crontab")
       end
     end

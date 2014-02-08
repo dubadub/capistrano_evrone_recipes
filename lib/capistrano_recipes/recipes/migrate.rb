@@ -4,7 +4,7 @@ namespace :deploy do
     return if ENV['MIGRATE_SKIP']
 
     if find_servers_for_task(current_task).any?
-      CapistranoEvroneRecipes::Util.ensure_changed_remote_dirs(self, "db/migrate") do
+      CapistranoRecipes::Util.ensure_changed_remote_dirs(self, "db/migrate") do
         run "cd #{release_path} && #{fetch :rake} RAILS_ENV=#{rails_env} db:migrate"
       end
     end
