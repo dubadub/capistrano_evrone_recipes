@@ -1,14 +1,14 @@
 $:.unshift File.expand_path("../lib", __FILE__)
-require "capistrano_recipes/version"
+require "capistrano_rails_recipes/version"
 
 Gem::Specification.new do |s|
-  s.name     = "capistrano_recipes"
+  s.name     = "capistrano_rails_recipes"
   s.version  = CapistranoRecipes::VERSION
 
-  s.author   = "Dmitry Galinsky"
-  s.email    = "dima.exe@gmail.com"
-  s.homepage = "http://github.com/evrone/capistrano_evrone_recipes"
-  s.summary  = "Capistrano recipes used in evrone company"
+  s.authors = ["Dmitry Galinsky", "Alex Dubovskoy"]
+  s.email    = "dubovskoy.a@gmail.com"
+  s.homepage = "https://github.com/dubadub/capistrano_rails_recipes"
+  s.summary  = "Capistrano recipes for rails app"
 
   s.description = s.summary
 

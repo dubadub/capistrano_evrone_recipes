@@ -1,4 +1,4 @@
-module CapistranoRecipes
+module CapistranoRailsRecipes
   class VERSION
 
     MAJOR = 0

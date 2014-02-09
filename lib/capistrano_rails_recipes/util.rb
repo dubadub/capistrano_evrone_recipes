@@ -1,4 +1,4 @@
-module CapistranoRecipes
+module CapistranoRailsRecipes
   class Util
     class << self
       def ensure_changed_remote_dirs(cap, path)
