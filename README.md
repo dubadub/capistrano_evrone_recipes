@@ -1,4 +1,4 @@
-# Evrone collection of Capistrano recipes
+# Collection of Capistrano recipes
 
 We deploy a lot of Rails applications and our developers have to solve similar problems each time during the deployment: how to run workers, how to generate crontab, how to precompile assets faster and so on. This collection of recipes helps us to solve them.
 
@@ -12,14 +12,14 @@ It also consider that you use *system wide rbenv* on the server.
 
 ##Installation
 
-    gem 'capistrano_evrone_recipes', :require => false
+    gem 'capistrano_rails_recipes', :require => false
 
 Capfile example:
 
-    require "capistrano_evrone_recipes/capistrano"
+    require "capistrano_rails_recipes/capistrano"
 
     set :repository, "git@github.com:..."
-    set :application, "my_cook_application"
+    set :application, "my_application"
 
     task :production do
       role  :web,     "web.example.com"
