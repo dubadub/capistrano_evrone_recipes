@@ -3,7 +3,7 @@ require "capistrano_rails_recipes/version"
 
 Gem::Specification.new do |s|
   s.name     = "capistrano_rails_recipes"
-  s.version  = CapistranoRecipes::VERSION
+  s.version  = CapistranoRailsRecipes::VERSION
 
   s.authors = ["Dmitry Galinsky", "Alex Dubovskoy"]
   s.email    = "dubovskoy.a@gmail.com"
