@@ -87,7 +87,7 @@ Procfile example:
     sidekiq: rbenv exec bundle exec sidekiq -L sidekiq.log
     web: rbenv exec bundle exec unicorn -c config/unicorn.rb -E production
 
-Also you need to configure runit to monitor deploy_to/services folder. 
+Also you need to configure `runit` to monitor `deploy_to/services` folder. 
 
 ##Nginx config file example for Unicorn
 
@@ -119,7 +119,7 @@ Also you need to configure runit to monitor deploy_to/services folder.
       keepalive_timeout 10;
     }
 
-Change **deploy_to** and **my_application** to your actual values.
+Change `deploy_to` and `my_application` to your actual values.
 
 ##Unicorn config file example
 
@@ -133,7 +133,7 @@ Change **deploy_to** and **my_application** to your actual values.
     worker_processes 5
     timeout 30
 
-Change **deploy_to** and **my_application** to your actual values.
+Change `deploy_to` and `my_application` to your actual values.
 
 ##Capistrano
 
