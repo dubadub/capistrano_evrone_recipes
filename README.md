@@ -28,7 +28,7 @@ Capfile example:
     server 'web.example.com', :web, :app, :worker, :crontab
     role :db, 'web.example.com', primary: true
 
-    OR
+    OR last two line can be expressed like
 
     task :production do
       role  :web,     "web.example.com"
@@ -45,6 +45,7 @@ Capfile example:
 As you can see, we use use roles to bind the tasks, and there are some additions to roles and additional roles:
 
 **deploy:setup** creates all necessary folders and symlinks to files:
+
     config/nginx.conf                     -> /opt/nginx/conf/sites-enabled/my_application
     creates deploy_to/shared/config folder
     creates deploy_to/services folder
