@@ -3,7 +3,7 @@ module CapistranoRailsRecipes
 
     MAJOR = 0
     MINOR = 1
-    PATCH = 21
+    PATCH = 22
 
     def self.to_s
       "#{MAJOR}.#{MINOR}.#{PATCH}"

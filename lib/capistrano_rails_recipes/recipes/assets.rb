@@ -37,7 +37,7 @@ namespace :deploy do
         set :asset_env, "RAILS_GROUPS=assets"
     DESC
     task :precompile, :on_no_matching_servers => :continue, :roles => assets_role, :except => { :no_release => true } do
-      CapistranoRecipes::Util.ensure_changed_remote_dirs(self, "app/assets") do
+      CapistranoRailsRecipes::Util.ensure_changed_remote_dirs(self, "app/assets") do
         run "cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} #{asset_env} assets:precompile"
       end
     end
